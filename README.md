@@ -1,6 +1,6 @@
 # personalNotes
 
-this is a repo for documenting my learning notes of  web programming
+在这里记录并分享我的在web开发中的学习，实践和思考。
 
 React现在已经是大家都想要学习的框架，关于React的高质量文章也挺多的，在这里分享一下我的学习笔记，写得不对的地方请指正。
 
@@ -47,7 +47,7 @@ React组件的类型基本分为**function component**和**class component**2种
   static getDerivedStateFromProps, 
 
 
-  render,  render函数要保持纯净。
+  render: render函数要保持纯净。
 
 
   componentDidMount：
@@ -81,6 +81,6 @@ React组件的类型基本分为**function component**和**class component**2种
 * **unmounting阶段**：
     componentWillUnmount, 在这里不要再setState()
 
-    具体的请参考[React Component](https://reactjs.org/docs/react-component.html)
+更具体的组件生命周期函数请参考官方文档[React Component](https://reactjs.org/docs/react-component.html)
 
 react上手相对简单，但要发挥出它的特点和威力需要更深入地学习。
