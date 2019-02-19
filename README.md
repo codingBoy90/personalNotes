@@ -1,4 +1,4 @@
-# personalNotes
+# web开发中的学习，实践和思考
 
 在这里记录并分享我的在web开发中的学习，实践和思考。
 
@@ -9,7 +9,7 @@ React只是View层，如果要做大型的项目，会搭配其他js库，普遍
 - React-Redux： 数据绑定，将Redux store里的数据绑定到React 组件中
 - react-router: 路由
 
-React的社区很繁荣，有许多优质的组件，可以满足项目里的各种需要，比如react-helmet, react-modal等等，跟多请见[antDesign](https://ant.design/docs/react/recommendation-cn)
+React的社区很繁荣，有许多优质的组件，可以满足项目里的各种需要，比如react-helmet, react-modal等等，更多精选组件推荐请见[antDesign](https://ant.design/docs/react/recommendation-cn)
 
 
 React使用jsx创建组件，jsx语法并不神秘，感觉和写普通的html标签差不多，但本质是javascript的扩展语法， 需要babel-preset-react编译，babel-preset-react会将jsx语法编译成为React.createElement(component, props, …children)，
@@ -29,7 +29,7 @@ const element = React.createElement(
   'Hello, world!'
 );
 ```
-啰嗦一句，写react是需要安装并配置Babel的，因为实际项目是用React组件开发的，组件打包相关的还需要webpack，可以自己一步步配置，也可以使用facebook的**create-react-app**，按照create-react-app的官方文档的步骤运行，就可以忽略繁琐的工程配置，直接上手react 开发。
+啰嗦一句，写react是需要安装并配置Babel的，因为实际项目是用React组件开发的，组件打包相关的还需要webpack，可以自己一步步配置，也可以使用facebook的**create-react-app**，按照**create-react-app**的官方文档的步骤运行，就可以忽略繁琐的工程配置，直接上手react 开发。
 
 如果我们写了一个组件A，然后通过ReactDOM.render(<A …props />， domElement)方法开始渲染。<A …props />通过Babel编译后实际上一个element 对象，React通过ReactDOM.render这个入口函数拿到你写的组件A的相关信息即一个element对象，开始了渲染的神奇之旅。
 
@@ -81,6 +81,6 @@ React组件的类型基本分为**function component**和**class component**2种
 * **unmounting阶段**：
     componentWillUnmount, 在这里不要再setState()
 
-更具体的组件生命周期函数请参考官方文档[React Component](https://reactjs.org/docs/react-component.html)
+更详细的组件生命周期函数请参考官方文档[React Component](https://reactjs.org/docs/react-component.html)
 
 react上手相对简单，但要发挥出它的特点和威力需要更深入地学习。
